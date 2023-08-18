@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="4" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-15T20:25:14 EDT" name="Default suite" finished-at="2023-08-15T20:25:42 EDT" duration-ms="28099">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-15T20:25:14 EDT" name="Default test" finished-at="2023-08-15T20:25:42 EDT" duration-ms="28099">
+      <class name="CucumberOptions.TestNgTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:14 EDT" name="setUpClass" finished-at="2023-08-15T20:25:14 EDT" duration-ms="585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@627acb38]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:19 EDT" duration-ms="4312" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [New Account Created. You are logged in as plavwu1234] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [New Account Created. You are logged in as plavwu1234] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefinitions.Register_page.user_is_successfully_registered(Register_page.java:49)
+at ✽.User is successfully registered(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:19 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:21 EDT" duration-ms="1909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:23 EDT" duration-ms="1917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:24 EDT" duration-ms="1824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:24 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:26 EDT" duration-ms="2062" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Invalid User Name] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Invalid User Name] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."tester","Password_1","Password_1" User is not able to register and alert "Invalid User Name" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:29 EDT" duration-ms="2242" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Invalid password] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Invalid password] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."tester2","Password","Password" User is not able to register and alert "Invalid password" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:31 EDT" duration-ms="1980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:33 EDT" duration-ms="2496" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [User already registered] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [User already registered] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."nump1234","Password_1","Welcome1" User is not able to register and alert "User already registered" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:35 EDT" duration-ms="2238" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [password should contain 8 characters] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [password should contain 8 characters] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."tester2","Pass","Pass" User is not able to register and alert "password should contain 8 characters" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:35 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:38 EDT" duration-ms="2118" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [password cannot be only numbers] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [password cannot be only numbers] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."tester2","1234","1234" User is not able to register and alert "password cannot be only numbers" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:40 EDT" duration-ms="2248" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [password cannot be same as user name] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [password cannot be same as user name] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."tester2","tester2","tester2" User is not able to register and alert "password cannot be same as user name" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-15T20:25:42 EDT" duration-ms="1931" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is not able to register into the dsportalapp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register User to dsportal app"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [password cannot be a common password] but found [password_mismatch:The two password fields didn’t match.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [password cannot be a common password] but found [password_mismatch:The two password fields didn’t match.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+at ✽."tester2","Welcome1","Welcome1" User is not able to register and alert "password cannot be a common password" is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:CucumberOptions.TestNgTestRunner@50f6ac94]" started-at="2023-08-15T20:25:42 EDT" name="tearDownClass" finished-at="2023-08-15T20:25:42 EDT" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- CucumberOptions.TestNgTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

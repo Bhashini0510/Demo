@@ -1,0 +1,267 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 17 19:09:36 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>28 seconds (28163 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [User already registered] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;nump1234&quot;,&quot;Password_1&quot;,&quot;Welcome1&quot; User is not able to register and alert &quot;User already registered&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace712753515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace712753515'><pre>java.lang.AssertionError: expected [User already registered] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;nump1234&quot;,&quot;Password_1&quot;,&quot;Welcome1&quot; User is not able to register and alert &quot;User already registered&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [New Account Created. You are logged in as plavwu1234] but found [password_mismatch:The two password fields didn’t match.]
+	at StepDefinitions.Register_page.user_is_successfully_registered(Register_page.java:49)
+	at ?.User is successfully registered(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:34)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace561890446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace561890446'><pre>java.lang.AssertionError: expected [New Account Created. You are logged in as plavwu1234] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.Register_page.user_is_successfully_registered(Register_page.java:49)
+	at ?.User is successfully registered(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:34)
+</pre></div></td>
+<td>4</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [password cannot be only numbers] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;1234&quot;,&quot;1234&quot; User is not able to register and alert &quot;password cannot be only numbers&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1795075885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1795075885'><pre>java.lang.AssertionError: expected [password cannot be only numbers] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;1234&quot;,&quot;1234&quot; User is not able to register and alert &quot;password cannot be only numbers&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [password cannot be a common password] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;Welcome1&quot;,&quot;Welcome1&quot; User is not able to register and alert &quot;password cannot be a common password&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1090885142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1090885142'><pre>java.lang.AssertionError: expected [password cannot be a common password] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;Welcome1&quot;,&quot;Welcome1&quot; User is not able to register and alert &quot;password cannot be a common password&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid password] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;Password&quot;,&quot;Password&quot; User is not able to register and alert &quot;Invalid password&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1799310296", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1799310296'><pre>java.lang.AssertionError: expected [Invalid password] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;Password&quot;,&quot;Password&quot; User is not able to register and alert &quot;Invalid password&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid User Name] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester&quot;,&quot;Password_1&quot;,&quot;Password_1&quot; User is not able to register and alert &quot;Invalid User Name&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace749625255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace749625255'><pre>java.lang.AssertionError: expected [Invalid User Name] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester&quot;,&quot;Password_1&quot;,&quot;Password_1&quot; User is not able to register and alert &quot;Invalid User Name&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [password cannot be same as user name] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;tester2&quot;,&quot;tester2&quot; User is not able to register and alert &quot;password cannot be same as user name&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace71322219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace71322219'><pre>java.lang.AssertionError: expected [password cannot be same as user name] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;tester2&quot;,&quot;tester2&quot; User is not able to register and alert &quot;password cannot be same as user name&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [password should contain 8 characters] but found [password_mismatch:The two password fields didn’t match.]
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;Pass&quot;,&quot;Pass&quot; User is not able to register and alert &quot;password should contain 8 characters&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413154615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413154615'><pre>java.lang.AssertionError: expected [password should contain 8 characters] but found [password_mismatch:The two password fields didn’t match.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at PageObjectfiles.RegisterPageObject.username_password_validation(RegisterPageObject.java:97)
+	at StepDefinitions.Register_page.user_fills_details(Register_page.java:71)
+	at ?.&quot;tester2&quot;,&quot;Pass&quot;,&quot;Pass&quot; User is not able to register and alert &quot;password should contain 8 characters&quot; is displayed(file:///C:/Manju/SDET/ElearningProject/src/test/resources/features/Register.feature:41)
+</pre></div></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td></td>
+<td>1</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td></td>
+<td>1</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td></td>
+<td>2</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+<tr>
+<td title='CucumberOptions.TestNgTestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOptions.TestNgTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td></td>
+<td>1</td>
+<td>CucumberOptions.TestNgTestRunner@76a4ebf2</td></tr>
+</table><p>
+</body>
+</html>
